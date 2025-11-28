@@ -1,0 +1,79 @@
+---
+title: |
+  ![](logo-etsiinf.png){width=1in}  
+  R para Procesamiento del Lenguaje Natural
+subtitle: "Práctica (Grupo 2)"
+author:
+- Channa Pan (alejandro.escorial@alumnos.upm.es)
+- Yi Chen Chen (alejandro.escorial@alumnos.upm.es)
+- Pablo Gil Gil (alejandro.escorial@alumnos.upm.es)
+- Alex Sanchez Perez (alejandro.escorial@alumnos.upm.es)
+- Emma Lorenzo Valeiras (alejandro.escorial@alumnos.upm.es)
+- Javier Echavarri Gonzalez (alejandro.escorial@alumnos.upm.es)
+- Alejandro Escorial Aparicio (alejandro.escorial@alumnos.upm.es)
+date: "`r format(Sys.time(), 'Documento creado el %d/%m/%Y')`"
+linkcolor: red 
+urlcolor: blue
+citecolor: green
+header-includes:
+    - \renewcommand{\contentsname}{Tabla de contenidos}
+output:
+  pdf_document: 
+    df_print: kable
+    number_sections: no
+    toc: yes
+                           # Más detalles en https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf
+---
+
+
+\newpage
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Pregunta 1
+
+¿Cuántas frases se analizan en este fichero?
+
+```{r, message=FALSE}
+
+data = read.table(file = 'es_ancora-up-test.conllu', sep = '\t', header = FALSE)
+
+```
+
+
+# Pregunta 2
+
+¿Cuántos verbos distintos se utilizan?
+
+```{r, message=FALSE}
+
+
+
+```
+
+
+# Pregunta 3
+
+Haz un programa connlu_nlp.R que reciba por argumentos el nombre del fichero collu de entrada y el
+nombre de un fichero donde se escribirán las respuestas a las preguntas anteriores.
+
+```{r, message=FALSE}
+
+
+
+```
+
+
+# Pregunta 4
+
+Ejecuta el programa connlu_nlp.R con el fichero CONLL-U que se encuentra [aquí](https://github.com/UniversalPropositions/UP-1.0/blob/e14e7adc7b13dd2691fd555f98e169125a50930f/UP_Spanish-AnCora/es_ancora-up-dev.conllu) y adjunta el fichero resultado.
+
+```{r, message=FALSE}
+
+
+
+```
