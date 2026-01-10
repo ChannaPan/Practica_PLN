@@ -1,0 +1,164 @@
+---
+title: |
+  ![](logo-etsiinf.png){width=1in}  
+  Procesamiento del Lenguaje Natural
+subtitle: "Práctica: Grupo 2"
+author:
+- Alejandro Escorial Aparicio (alejandro.escorial@alumnos.upm.es)
+- Javier Echavarri Gonzalez (@alumnos.upm.es)
+- Emma Lorenzo Valeiras (@alumnos.upm.es)
+- Alex Sanchez Perez (@alumnos.upm.es)
+- Yi Chen Chen (@alumnos.upm.es)
+- Pablo Gil Gil (@alumnos.upm.es)
+- Channa Pan (@alumnos.upm.es)
+date: "`r format(Sys.time(), 'Documento creado el %d/%m/%Y')`"
+linkcolor: red 
+urlcolor: blue
+citecolor: green
+header-includes:
+    - \renewcommand{\contentsname}{Tabla de contenidos}
+output:
+  pdf_document: 
+    df_print: kable
+    number_sections: no
+    toc: yes
+                           # Más detalles en https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf
+---
+
+
+\newpage
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+
+# Realización de la práctica
+
+Descarga el fichero CONLL-U que se encuentra [aquí](https://github.com/UniversalPropositions/UP-1.0/blob/e14e7adc7b13dd2691fd555f98e169125a50930f/UP_Spanish-AnCora/es_ancora-up-test.conllu). Este fichero tiene 58.198 líneas y ocupa 3.44 MB en
+disco. Este fichero no es puro CoNLL-U, por lo que no puede ser leído por udpipe_read_conllu(). Hay que
+leerlo como un fichero tsv (tab separated values) con la función read.table(file = 'el_fichero', sep =
+'\t', header = FALSE).
+
+```{r}
+
+fichero <- "es_ancora-up-test.conllu"
+datos <- read.table(file = fichero, 
+                        sep = '\t', 
+                        header = FALSE, 
+                        quote = "",
+                        comment.char = "#",
+                        blank.lines.skip = TRUE,
+                        flush = TRUE,
+                        fill=TRUE)
+
+```
+
+
+## Pregunta 1
+
+¿Cuántas frases se analizan en este fichero?
+
+### Código
+
+```{r}
+
+
+
+```
+
+### Pruebas
+
+```{r}
+
+
+
+```
+
+### Explicación
+
+
+## Pregunta 2
+
+¿Cuántos verbos distintos se utilizan? Haz un histograma con las formas verbales encontradas.
+
+### Código
+
+```{r}
+
+
+
+```
+
+### Pruebas
+
+```{r}
+
+
+
+```
+
+### Explicación
+
+
+## Pregunta 3
+
+Haz un programa connlu_nlp.R que reciba por argumentos el nombre del fichero collu de entrada y el
+nombre de un fichero donde se escribirán las respuestas a las preguntas anteriores.
+
+### Código
+
+```{r}
+
+
+
+```
+
+### Pruebas
+
+```{r}
+
+
+
+```
+
+### Explicación
+
+
+## Pregunta 4
+
+Ejecuta el programa connlu_nlp.R con el fichero CONLL-U que se encuentra [aquí](https://github.com/UniversalPropositions/UP-1.0/blob/e14e7adc7b13dd2691fd555f98e169125a50930f/UP_Spanish-AnCora/es_ancora-up-dev.conllu) y adjunta el fichero resultado.
+
+### Código
+
+```{r}
+
+
+
+```
+
+
+# Distribución de tareas y porcentajes de autoría
+
+- Alejandro Escorial Aparicio:
+  Algo...
+  
+- Javier Echavarri Gonzalez:
+  Algo...
+  
+- Emma Lorenzo Valeiras:
+  Algo...
+  
+- Alex Sanchez Perez:
+  Algo...
+  
+- Yi Chen Chen:
+  Algo...
+  
+- Pablo Gil Gil:
+  Algo...
+  
+- Channa Pan:
+  Algo...
+  
